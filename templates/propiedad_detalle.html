@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles de la propiedad</title>
+</head>
+<body>
+{% if detalle %}
+    <h1>{{ detalle[0]['title'] }}</h1>
+    <img src="{{ detalle[0]['pictures'][0] if detalle[0]['pictures'] else '' }}" alt="{{ detalle[0]['title'] }}">
+    <p>Descripción: {{ detalle[0]['description'] }}</p>
+    <p>ID: {{ detalle[0]['identifier'] }}</p>
+    <p>Baños: {{ detalle[0]['bathrooms'] }}</p>
+    <p>Habitaciones: {{ detalle[0]['bedrooms'] }}</p>
+    <p>Precio: {{ detalle[0]['selling_cost'] }}</p>
+{% else %}
+    <p>Propiedad no encontrada</p>
+{% endif %}
+</body>
+</html>
