@@ -1,3 +1,9 @@
-flask
+Flask
 requests
 jsonify
+Jinja2
+urllib3
+Werkzeug
+MarkupSafe
+itsdangerous
+Click
